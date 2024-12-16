@@ -1,0 +1,28 @@
+# robots.txt pour ourkitchen.alwaysdata.net
+
+# Autoriser tous les moteurs de recherche à explorer tout le site
+User-agent: *
+Disallow: /admin/      
+Disallow: /login/        
+Disallow: /private/      
+Disallow: /tmp/          
+# Autoriser l'accès aux pages publiques
+Allow: /public/
+Allow: /images/
+
+# Sitemap de ton site
+Sitemap: http://ourkitchen.alwaysdata.net/sitemap.xml
+
+# Limiter la fréquence d'exploration (par exemple, 1 page par seconde)
+Crawl-delay: 1
+
+# Empêcher certains moteurs de recherche spécifiques d'explorer certaines pages
+User-agent: Googlebot
+Disallow: /private-google/
+
+User-agent: Bingbot
+Disallow: /private-bing/
+
+# Block all web crawlers from accessing the 'test' folder
+User-agent: *
+Disallow: /test/

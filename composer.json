@@ -1,0 +1,16 @@
+{
+    "name": "moi/projet-vzj",
+    "autoload": {
+        "psr-4": {
+            "Moi\\ProjetVzj\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "zedjiga"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}

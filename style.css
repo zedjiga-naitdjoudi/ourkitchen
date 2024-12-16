@@ -1,0 +1,1297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("ressources/bg.png");
+    background-position: 90% center;
+    /* Ajustez cette valeur selon vos besoins */
+    background-repeat: no-repeat;
+    background-size: 105%; /* Augmente la valeur pour dézoomer */
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;;
+    background-position: 90% center;
+    /* Ajustez cette valeur selon vos besoins */
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+
+
+
+
+/* Main content section with background image */
+.main-content {
+    position: relative;
+    background-position: right;
+    background-repeat: no-repeat;
+    /*Ensure the image doesn't repeat */
+    background-size: cover;
+    /*Ensure the image covers the container */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.promo {
+    max-width: 30%;
+    margin-right: 15%;
+    margin-left: 10%;
+    z-index: 2;
+    transform: translateY(-20px);
+    /* Décalage vers le haut */
+}
+
+/* Ajoutez un fond semi-transparent au texte, si nécessaire */
+.promo h2,
+.promo p {
+
+    padding: 10px;
+    /* Espacement pour le texte */
+
+}
+
+
+.highlight {
+    color: orange;
+}
+
+/* From Uiverse.io by alexreyes091 */
+.btn {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    background: rgb(255, 255, 255);
+    color: #FE9D15;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid #FE9D15;
+    border-right: 2px solid #FE9D15;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transition-duration: 1s;
+    transition-property: border-top, border-left, border-bottom, border-right,
+        box-shadow;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+.btn:hover {
+    border-top: 2px solid #FE9D15;
+    border-left: 2px solid #FE9D15;
+    border-bottom: 2px solid #CCD5AE;
+    border-right: 2px solid #CCD5AE;
+    box-shadow: rgba(29, 121, 70, 0.4) 5px 5px, rgba(29, 120, 67, 0.3) 10px 10px,
+        rgba(29, 120, 67, 0.2) 15px 15px;
+}
+
+
+.meal-image img {
+    width: 100%;
+    /* Assurer que l'image prend toute la largeur de son conteneur */
+    height: auto;
+    /* Maintenir le ratio d'aspect */
+}
+
+
+.meal-image {
+    width: 100%;
+}
+
+/* Style for Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    /* Pour permettre à l'image de fond de déborder */
+    z-index: 1;
+    /* Assurez-vous que le header est au-dessus de l'image de fond */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 15px;
+    /* Espacement autour du texte */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transition pour les effets */
+}
+
+nav ul li a:hover {
+    background-color: #FE9D15;
+    /* Couleur de fond au survol */
+    color: white;
+    /* Texte blanc au survol */
+    border-radius: 5px;
+    /* Arrondi des coins au survol */
+}
+
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    /* Ajoutez un espacement entre les boutons */
+    
+}
+
+.auth-buttons a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: #000000; /* Couleur du texte */
+}
+
+.auth-buttons a:hover {
+    color: #fafafa; 
+}
+
+
+
+.login {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    /* Largeur ajustée */
+    height: 45px;
+    /* Hauteur ajustée */
+    background-color: #FE9D15;
+    /* Couleur de fond */
+    color: #fff;
+    /* Couleur du texte */
+    border: none;
+    /* Pas de bordure */
+    border-radius: 25px;
+    /* Bords arrondis */
+    font-size: 16px;
+    /* Taille de la police */
+    font-weight: bold;
+    /* Gras */
+    cursor: pointer;
+    /* Curseur pointer */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Effets de transition */
+}
+
+.login:hover {
+    background-color: #e08e00;
+    /* Couleur de fond au survol */
+    transform: scale(1.05);
+    /* Légère augmentation de la taille au survol */
+}
+
+.login:focus {
+    outline: none;
+    /* Pas de contour lors du focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Ombre au focus */
+}
+
+
+
+footer {
+    background-color: #e7e5e5;
+    color: #333;
+    padding: 40px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-content {
+    padding: 40px 0;
+    /* Ajout de padding vertical */
+    display: flex;
+    justify-content: center;
+    /* Centrer le contenu */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 150px;
+    margin: 0 85px;
+}
+
+.footer-title {
+    color: #000;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-link {
+    color: #707478e8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    /* Ajout pour l'état focus pour l'accessibilité */
+    text-decoration: underline;
+    color: #494d55;
+    /* Couleur plus foncée pour le survol */
+}
+
+.footer-info {
+    border-top: 1px solid #050505;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Pour les appareils avec une largeur de 600px ou moins */
+@media (max-width: 600px) {
+    .promo h2 {
+        font-size: 1.5rem;
+    }
+
+    .promo p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+    }
+
+    .cookie-card {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Pour les appareils avec une largeur de 1024px ou moins (tablettes et petits ordinateurs) */
+@media (max-width: 1024px) {
+    .promo {
+        padding: 20px;
+    }
+
+    .promo h2 {
+        font-size: 1.8rem;
+    }
+
+    .promo p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Pour les très grands écrans */
+@media (min-width: 1200px) {
+    .promo h2 {
+        font-size: 2.5rem;
+    }
+
+    .promo p {
+        font-size: 1.2rem;
+    }
+}
+
+
+.cookie-card {
+    position: fixed;
+    bottom: 20px;
+    /* Ajustez selon vos préférences */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    /* Pour s'assurer qu'elle soit au-dessus des autres éléments */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    /* Ajustez la largeur si nécessaire */
+    max-width: 300px;
+    /* Largeur maximale */
+    background-color: white;
+    display: none;
+    /* Masquée par défaut */
+}
+
+
+#cookieSvg {
+    width: 50px;
+}
+
+#cookieSvg g path {
+    fill: rgb(97, 81, 81);
+}
+
+.cookieHeading {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: rgb(26, 26, 26);
+}
+
+.cookieDescription {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.acceptButton {
+    width: 80px;
+    height: 30px;
+    background-color: #FE9D15;
+    transition-duration: .2s;
+    border: none;
+    color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.declineButton {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(218, 218, 218);
+    transition-duration: .2s;
+    color: rgb(46, 46, 46);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.declineButton:hover {
+    background-color: #ebebeb;
+    transition-duration: .2s;
+}
+
+.acceptButton:hover {
+    background-color: #f8b07d;
+    transition-duration: .2s;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    /* Ajuste selon les besoins */
+}
+
+.form_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDDCD9; /* Couleur de fond */
+    padding: 20px; /* Ajout de padding */
+    border: 2px solid #264143;
+    border-radius: 20px;
+    box-shadow: 3px 4px 0px 1px #E99F4C; /* Ombre portée */
+    width: 100%; 
+    max-width: 400px; /* Largeur maximale */
+    margin-left: 20px; /* Ajuste cette valeur selon tes besoins */
+}
+
+.title {
+    color: #264143;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.sub_title {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin: 10px;
+}
+
+.form_style {
+    outline: none;
+    border: 2px solid #264143;
+    box-shadow: 3px 4px 0px 1px #E99F4C;
+    width: 100%;
+    /* Utiliser la largeur maximale du conteneur */
+    padding: 12px 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.form_style:focus,
+.btn:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px #E99F4C;
+}
+
+.btn {
+    padding: 15px;
+    margin: 25px 0px;
+    
+    /* Remplir la largeur */
+    font-size: 15px;
+    background: #DE5499;
+    /* Couleur de fond */
+    border-radius: 10px;
+    /* Coins arrondis */
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px #E99F4C;
+    border: none;
+    /* Pas de bordure */
+    cursor: pointer;
+   
+    text-decoration: none; /* Supprime le soulignement */
+    transition-duration: 0.05s;
+    transition-property: border-top, border-left, border-bottom, border-right,
+        box-shadow;
+}
+
+.btn:hover {
+    opacity: .9;
+    /* Légère transparence au survol */
+}
+
+.link {
+    font-weight: 800;
+    color: #264143;
+    padding: 5px;
+    text-decoration: none;
+    /* Pas de soulignement */
+}
+
+.link:hover {
+    text-decoration: underline;
+    /* Soulignement au survol */
+}
+
+h2 {
+    align-items: center;
+    text-align: center;
+}
+
+.container1 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container1 {
+    max-width: 800px; /* Largeur maximale pour le contenu */
+    margin: auto; /* Centrer le conteneur */
+    padding: 20px;
+    background-color: #EDDCD9; /* Fond en accord avec les autres pages */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Section des recettes */
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.recipe {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largeur des cartes de recette */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.recipe:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe h3 {
+    font-size: 1.5em;
+    color: #264143; /* Couleur de titre */
+    margin-bottom: 10px;
+}
+
+.recipe-detail img {
+    max-width: 600px;      /* Limite la largeur de l'image pour qu'elle ne soit pas trop grande */
+    width: 100%;           /* Utilise toute la largeur disponible jusqu'à max-width */
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;     /* Pour maintenir l'aspect ratio de l'image */
+    display: block;        /* Nécessaire pour que margin: auto fonctionne */
+    margin: 0 auto 20px;   /* Centre l'image horizontalement et ajoute un espace en bas */
+}
+
+.recipe p {
+    color: #707478;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.recipe a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FE9D15;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.recipe a:hover {
+    background-color: #e08e00;
+    transform: scale(1.05);
+}
+
+.recipe a:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Détails de la recette */
+.recipe-detail {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #EDDCD9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+h1{
+    text-align: center;
+}
+.recipe-detail h1 {
+    font-size: 2.2em;
+    color: #264143;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.recipe-detail img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.recipe-detail h3 {
+    font-size: 1.6em;
+    color: #264143;
+    margin-top: 20px;
+}
+
+.recipe-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recipe-detail ul li {
+    background-color: #f8f8f8;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #707478;
+}
+
+.recipe-detail .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #FE9D15;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.recipe-detail .btn:hover {
+    background-color: #e08e00;
+    transform: scale(1.05);
+}
+
+.recipe-detail .btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style de la barre de recherche */
+.search-container {
+    max-width: 600px;
+    margin: 20px auto;  /* Centrer le formulaire de recherche */
+    padding: 10px 20px;
+    background-color: #EDDCD9;
+    border-radius: 50px; /* Forme arrondie */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacement entre l'input et le bouton */
+}
+
+/* Style du champ de recherche */
+.search-container input {
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #264143;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    outline: none;
+    border: 2px solid #FE9D15; /* Mettre une bordure orange au focus */
+    box-shadow: 0 0 5px rgba(255, 157, 21, 0.5);
+}
+
+/* Style du bouton de recherche */
+.search-container button {
+    padding: 10px 20px;
+    background-color: #FE9D15;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+
+}
+ 
+.search-container button:hover {
+    background-color: #e08e00;
+    transform: scale(1.05);
+}
+
+.search-container button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Section principale de la page About Us */
+.about-us-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #EDDCD9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre de la page */
+.about-us-content h1 {
+    font-size: 2.5em;
+    color: #264143;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Introduction générale */
+.team-introduction {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #707478;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Section des membres de l'équipe */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Carte d'un membre de l'équipe */
+.team-member {
+    width: 300px;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo du membre */
+.team-photo {
+    width: 100%; /* Prend toute la largeur de la carte */
+    height: 200px; /* Hauteur fixe pour l'image */
+    border-radius: 10px 10px 0 0; /* Arrondir uniquement les coins supérieurs */
+    object-fit: cover; /* Assure que l'image occupe tout l'espace sans déformation */
+    margin-bottom: 20px;
+}
+
+/* Nom et description */
+.team-member h3 {
+    font-size: 1.5em;
+    color: #264143;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #707478;
+    line-height: 1.4;
+}
+
+/* Section sur l'université */
+.university-info {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #707478;
+    text-align: center;
+    margin-top: 40px;
+}
+/*défilment des recettes*/
+.recipe-carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    flex: 0 0 300px;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.recipe-carousel:hover {
+    animation-play-state: paused;
+}
+/* Style de base pour le lien */
+.recipe-detail-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e08e00; /* Couleur de fond (orange) */
+    color: white;  /* Couleur du texte */
+    font-weight: bold;
+    text-decoration: none;  /* Retirer le souligné */
+    border-radius: 5px;  /* Bords arrondis */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Changement de couleur au survol */
+.recipe-detail-link:hover {
+    background-color: #ff3b30;  /* Couleur plus foncée au survol */
+    transform: scale(1.1);  /* Légère augmentation de taille */
+}
+
+/* Ajouter une icône avant le texte du lien (optionnel) */
+.recipe-detail-link::before {
+  
+    margin-right: 8px;  /* Espace entre l'icône et le texte */
+}
+
+/* Optionnel: Un effet de focus pour améliorer l'accessibilité */
+.recipe-detail-link:focus {
+    outline: 2px solid  #e08e00;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* Style général du formulaire de soumission avec la classe .submit */
+.submit form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Titre du formulaire */
+.submit form h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style des champs du formulaire */
+.submit form input, 
+.submit form select, 
+.submit form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Effet au survol des champs de saisie */
+.submit form input:focus, 
+.submit form select:focus, 
+.submit form textarea:focus {
+    border-color: #e08e00;
+    outline: none;
+}
+
+/* Style du textarea (pour la description de la recette) */
+.submit form textarea {
+    min-height: 150px;
+}
+
+/* Style des boutons */
+.submit form button {
+    background-color:#e08e00;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.submit form button:hover {
+    background-color:  #ff3b30;  /* Couleur plus foncée au survol */
+}
+
+/* Erreur de soumission */
+.submit .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Pour un design responsive (écrans plus petits) */
+@media (max-width: 768px) {
+    .submit form {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .submit form h2 {
+        font-size: 20px;
+    }
+}
+/* Centrer le lien de retour à l'accueil */
+.submit a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff3b30; /* couleur de fond */
+    color: white; /* couleur du texte */
+    text-decoration: none; /* retirer le soulignement */
+    border-radius: 5px; /* bords arrondis */
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* effet au survol */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+}
+
+/* Effet au survol du lien */
+.submit a:hover {
+    background-color: #e08e00; /* couleur au survol */
+}
+
+/* Conteneur des recettes */
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Carte de recette */
+.recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.recipe-card p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.recipe-card button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.recipe-card button:hover {
+    background-color: #e55d00;
+}
+
+/* Section des commentaires */
+h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+ul li strong {
+    color: #ff6600;
+}
+
+ul li em {
+    font-size: 0.9em;
+    color: #777;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+form button:hover {
+    background-color: #e55d00;
+}
+
+/* Modale */
+/* Style du modal */
+.modal {
+    display: none; /* Masquer la modale par défaut */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permet de défiler si le contenu est trop grand */
+    background-color: rgba(0, 0, 0, 0.4); /* Arrière-plan semi-transparent */
+}
+
+/* Contenu de la modale */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    max-height: 80%; /* Empêche la modale de dépasser l'écran */
+    overflow-y: auto; /* Ajoute une barre de défilement verticale si nécessaire */
+}
+
+/* Fermeture du modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Pour les sections avec des ingrédients et des instructions */
+#modal-ingredients,
+#modal-instructions {
+    max-height: 300px; /* Hauteur maximale avant de faire défiler */
+    overflow-y: auto; /* Permet de défiler si le contenu est trop grand */
+    margin-bottom: 15px; /* Espacement entre les sections */
+}
+
+/* Pour la section des commentaires */
+#modal-comments {
+    max-height: 200px; /* Hauteur maximale pour les commentaires */
+    overflow-y: auto;
+}
+
+/* Formulaire d'ajout de commentaire */
+#comment-form {
+    margin-top: 15px;
+}
+.soumettre {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff3b30; /* couleur de fond */
+    color: white; /* couleur du texte */
+    text-decoration: none; /* retirer le soulignement */
+    border-radius: 5px; /* bords arrondis */
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* effet au survol */
+    margin-left: auto; /* Centrer horizontalement */
+    margin-right: auto; /* Centrer horizontalement */
+}
+
+/* Effet au survol du lien */
+.soumettre {
+    background-color: #e08e00; /* couleur au survol */
+}
+
+/* Styles de base pour le menu profil */
+.profile-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.profile-button:hover {
+    background-color: darkorange;
+}
+
+/* Style pour le menu déroulant */
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    width: auto; /* S'ajuste en fonction du contenu */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px 0;
+    left: -10px; /* Décale le menu à gauche pour éviter qu'il soit coupé */
+    right: auto;
+}
+
+/* Assurez-vous que le menu ne disparaît pas quand vous cliquez sur l'un de ses éléments */
+.profile-dropdown a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.profile-dropdown a:hover {
+    background-color: lightgray;
+}
+
+/* Affichage du menu déroulant au survol */
+.profile-menu:hover .profile-dropdown {
+    display: block;
+}
+
+/* Empêcher le débordement du menu à droite */
+body {
+    overflow-x: hidden;
+}
+/* Style de la section des résultats */
+
+.results {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+    gap: 20px; /* Espacement entre les éléments */
+    justify-content: space-between; /* Espacement uniforme entre les éléments */
+    margin-top: 30px; /* Marge pour espacer les résultats du formulaire */
+}
+
+/* Style pour chaque carte de recette */
+.recipe {
+    flex: 1 1 calc(33.33% - 20px); /* Chaque carte prend un tiers de la ligne, en tenant compte de l'espacement */
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Fond gris clair */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center; /* Centrer le contenu */
+    overflow: hidden;
+}
+
+/* Style des images de recettes */
+.recipe img {
+    width: 100%; /* Garde la largeur à 100% de l'espace disponible */
+    max-width: 150px; /* Définit une largeur maximale de 150px pour les images */
+    border-radius: 5px; /* Garder un léger arrondi sur les coins */
+}
+
+
+@media (max-width: 768px) {
+    /* Si la largeur de l'écran est inférieure à 768px, les recettes s'affichent en une seule colonne */
+    .recipe {
+        flex: 1 1 100%;
+    }
+}
+
+
+.sitemap h2 {
+    color: #333;
+}
+
+.sitemap ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.sitemap ul li a:hover {
+    text-decoration: underline;
+}
